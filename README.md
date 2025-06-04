@@ -114,7 +114,7 @@ ted ask how to test network connectivity
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Project Structure
 
