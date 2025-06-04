@@ -42,7 +42,7 @@ func runAsk(cmd *cobra.Command, args []string) error {
 	}
 
 	if cfg.GeminiAPIKey == "" {
-		return fmt.Errorf("Gemini API key not configured. Run 'ted settings' to set it up")
+		return fmt.Errorf("gemini API key not configured. Run 'ted settings' to set it up")
 	}
 
 	client, err := gemini.NewClient(cfg.GeminiAPIKey, cfg.Model, cfg.Temperature)

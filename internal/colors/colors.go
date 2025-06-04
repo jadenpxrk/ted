@@ -14,7 +14,6 @@ var (
 	// Additional
 	CyanColor   = lipgloss.Color("14")      // Cyan
 	BrightGreen = lipgloss.Color("10")      // Bright green
-	PinkColor   = lipgloss.Color("205")     // Pink/Magenta
 	LightGray   = lipgloss.Color("#E5E7EB") // Light gray
 	LightPurple = lipgloss.Color("#A78BFA") // Light purple
 )

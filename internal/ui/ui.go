@@ -2,9 +2,9 @@ package ui
 
 import (
 	"fmt"
+	"ted/internal/colors"
 
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/charmbracelet/lipgloss"
 )
 
 type ConfirmModel struct {
@@ -49,8 +49,8 @@ func (m ConfirmModel) View() string {
 	}
 
 	// Simple styling without borders
-	commandStyle := lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
-	promptStyle := lipgloss.NewStyle().Foreground(lipgloss.Color("33"))
+	commandStyle := colors.CommandStyle
+	promptStyle := colors.PromptStyle
 
 	content := fmt.Sprintf("%s\nCommand: %s\n%s",
 		m.explanation,

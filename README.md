@@ -20,12 +20,6 @@ go build -o ted
 sudo mv ted /usr/local/bin/
 ```
 
-### Using Homebrew (Coming Soon)
-
-```bash
-brew install ted
-```
-
 ## Setup
 
 Before using Ted, you'll need to configure your Gemini API key:
@@ -72,7 +66,7 @@ Browse your command history:
 ted history
 ```
 
-Use arrow keys to navigate, Enter to select, and 'q' to quit.
+Navigate through your recent commands (last 5 entries), view details, and manage your history.
 
 ### Settings
 
@@ -87,13 +81,12 @@ ted settings
 Ted stores its configuration in `~/.ted/`:
 
 - `config.yaml` - API keys and model settings
-- `history.json` - Command history
+- `history.db` - Command history (BoltDB database, limited to last 5 entries)
 
 ## Available Models
 
-- `gemma-3n-e4b-it` (default)
+- `gemini-2.0-flash` (default)
 - `gemini-2.0-flash-lite`
-- `gemini-2.0-flash`
 - `gemini-2.5-pro-preview-05-06`
 - `gemini-2.5-flash-preview-05-20`
 
@@ -115,25 +108,6 @@ ted ask how to check git status
 # Network
 ted agent check open ports
 ted ask how to test network connectivity
-```
-
-## Building for Distribution
-
-### Create a Homebrew Formula
-
-To package Ted for Homebrew distribution:
-
-1. Build for multiple architectures:
-
-```bash
-# For macOS (Apple Silicon)
-GOOS=darwin GOARCH=arm64 go build -o ted-darwin-arm64
-
-# For macOS (Intel)
-GOOS=darwin GOARCH=amd64 go build -o ted-darwin-amd64
-
-# For Linux
-GOOS=linux GOARCH=amd64 go build -o ted-linux-amd64
 ```
 
 ## License
