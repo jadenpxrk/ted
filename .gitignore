@@ -1,3 +1,5 @@
 .vscode
 .github
 .DS_Store
+ted
+dist/
