@@ -2,6 +2,8 @@
 
 Ted is the fastest way to get an answer in the terminal.
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/jadenpxrk/ted)](https://goreportcard.com/report/github.com/jadenpxrk/ted)
+
 ## Features
 
 - **Agent Mode**: Generate a single command from natural language with confirmation
