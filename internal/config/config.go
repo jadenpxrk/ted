@@ -32,7 +32,7 @@ func Load() (*Config, error) {
 	viper.SetConfigType("yaml")
 	viper.AddConfigPath(configPath)
 
-	viper.SetDefault("model", "gemini-2.0-flash")
+	viper.SetDefault("model", "gemini-2.5-flash")
 	viper.SetDefault("temperature", 0.3)
 
 	if err := os.MkdirAll(configPath, 0755); err != nil {

@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"strings"
 
-	"ted/internal/colors"
-	"ted/internal/config"
-	"ted/internal/gemini"
-	"ted/internal/history"
+	"github.com/jadenpxrk/ted/internal/colors"
+	"github.com/jadenpxrk/ted/internal/config"
+	"github.com/jadenpxrk/ted/internal/gemini"
+	"github.com/jadenpxrk/ted/internal/history"
 
 	"github.com/spf13/cobra"
 )

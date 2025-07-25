@@ -1,6 +1,6 @@
 package main
 
-import "ted/cmd"
+import "github.com/jadenpxrk/ted/cmd"
 
 func main() {
 	cmd.Execute()

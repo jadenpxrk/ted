@@ -2,7 +2,7 @@ package ui
 
 import (
 	"fmt"
-	"ted/internal/colors"
+	"github.com/jadenpxrk/ted/internal/colors"
 
 	tea "github.com/charmbracelet/bubbletea"
 )

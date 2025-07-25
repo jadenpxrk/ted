@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"ted/internal/colors"
-	"ted/internal/history"
+	"github.com/jadenpxrk/ted/internal/colors"
+	"github.com/jadenpxrk/ted/internal/history"
 
 	"github.com/charmbracelet/lipgloss"
 	"github.com/spf13/cobra"

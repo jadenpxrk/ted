@@ -1,4 +1,4 @@
-module ted
+module github.com/jadenpxrk/ted
 
 go 1.23.1
 

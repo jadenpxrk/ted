@@ -7,11 +7,11 @@ import (
 	"os/exec"
 	"strings"
 
-	"ted/internal/colors"
-	"ted/internal/config"
-	"ted/internal/gemini"
-	"ted/internal/history"
-	"ted/internal/ui"
+	"github.com/jadenpxrk/ted/internal/colors"
+	"github.com/jadenpxrk/ted/internal/config"
+	"github.com/jadenpxrk/ted/internal/gemini"
+	"github.com/jadenpxrk/ted/internal/history"
+	"github.com/jadenpxrk/ted/internal/ui"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"

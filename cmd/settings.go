@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"ted/internal/colors"
-	"ted/internal/config"
+	"github.com/jadenpxrk/ted/internal/colors"
+	"github.com/jadenpxrk/ted/internal/config"
 
 	"github.com/spf13/cobra"
 )
@@ -52,20 +52,18 @@ func runSettings(cmd *cobra.Command, args []string) error {
 	fmt.Printf("\n%s %s\n", colors.SettingsLabelStyle.Render("Current model:"), colors.SettingsValueStyle.Render(cfg.Model))
 	fmt.Printf("%s\n", colors.HeaderStyle.Render("Available models:"))
 	models := []string{
-		"gemini-2.0-flash",
-		"gemini-2.0-flash-lite",
-		"gemini-2.5-pro-preview-05-06",
-		"gemini-2.5-flash-preview-05-20",
+		"gemini-2.5-pro",
+		"gemini-2.5-flash",
 	}
 
 	for i, model := range models {
 		fmt.Printf("  %s", colors.SettingsOptionStyle.Render(fmt.Sprintf("%d. %s", i+1, model)))
-		if model == "gemini-2.0-flash" {
+		if model == "gemini-2.5-flash" {
 			fmt.Printf(" %s", colors.SettingsConfiguredStyle.Render("(default)"))
 		}
 		fmt.Println()
 	}
-	fmt.Printf("%s ", colors.PromptStyle.Render("Enter number (1-4) or press Enter to keep current:"))
+	fmt.Printf("%s ", colors.PromptStyle.Render("Enter number (1-2) or press Enter to keep current:"))
 
 	if scanner.Scan() {
 		input := strings.TrimSpace(scanner.Text())
